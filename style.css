@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+/*bg-color*/
+.dark-purple {
+  background-color: #1a0b2e;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px; 
+}
+.logo{
+  font-size:2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.logo:hover {
+  transform: scale(1.2); 
+}
+.logo span {
+  background: linear-gradient(to top, yellow, #ff00cc, #3333ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  justify-content: space-around;
+  color: white;
+    
+}
+.nav-links li{
+transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.nav-links li:hover {
+  transform: scale(1.2); 
+}
+.subscribe-btn button  {
+  background: linear-gradient(to right, #ffcc00, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size:medium;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer; 
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.subscribe-btn :hover {
+  
+  
+  transform: scale(1.2); 
+}
