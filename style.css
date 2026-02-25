@@ -18,6 +18,7 @@ body {
     padding: 20px; 
   width: 100%;
     flex-wrap: wrap;
+    
 }
 .logo{
   font-size:2.5rem;
@@ -25,6 +26,7 @@ body {
   cursor: pointer;
   color: white;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+ 
 }
 .logo:hover {
   transform: scale(1.2); 
@@ -66,7 +68,7 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 .subscribe-btn :hover {
   transform: scale(1.2); 
 }
-.main-btn {
+.btn-subscribe-main {
   display: inline-block;
 }
 .menu-icon {
@@ -76,16 +78,26 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   scale: calc(1.5);
 }
 /* hero */
+.hero{
+  position: relative;
+  margin-bottom: 0;
+
+}
 
 .hero .bg{
     width: 100%;
+     display: block;
+     line-height: 0;
+
+
 }
 .bg-img {
   position: relative; 
+ 
 }
 .circle {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);  
   width:28%;
@@ -93,7 +105,7 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 }
 .mic{
    position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);  
   width:7%;
@@ -106,10 +118,86 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 40px;
-  left: 57%;
-  top: 22%;
+  left: 58%;
+  top: 16%;
   box-shadow: 0px 0px 15px #00ff88;
+  z-index: 2;
 }
+/* text-container */
+.text-container{
+   background-color: #1a0b2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -5px;
+
+
+}
+.all-text{
+  position: relative;
+  color: white; 
+  text-align: center;
+  margin-top: -200px;  
+
+
+}
+h1 {
+  font-size: 3rem;
+   margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+ margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subscribe-btn-transparent {
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 12px 40px;
+  font-weight: bold;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.subscribe-btn-transparent:hover {
+  transform: scale(1.2); 
+}
+
+.spotify-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+   width: auto;
+  background: linear-gradient(to right, #ffcc00, #ff00cc, #3333ff);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.spotify-btn:hover {
+  
+   transform: scale(1.2); 
+}
+
 @media screen and (max-width: 576px), screen and (max-width: 768px){
   .logo{
   font-size:1.5rem;
@@ -117,7 +205,7 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 .navbar{
   justify-content: space-between;
 }
-   .main-btn {
+   .btn-subscribe-main{
     display: none;
   }
   .menu-icon {
@@ -126,13 +214,42 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   .nav-links {
     display: none;
   }
- .grn-btn{
- font-size: 0.6rem;
-  padding: 0.3rem 0.6rem
- }
+  .circle {
+  width:30%;
+}
+  .grn-btn {
+    top: 15%;
+    left: 55%;
+    font-size: 0.5rem;
+  }
+  .text-container{
+  width: 100%;
 
+  }
+   .all-text {
+    transform: none;
+    margin-top: -2.5rem;
+    position: relative;
+    width: 100%;
+    padding-bottom: 1.25rem;
+  }
+
+ h1 {
+  font-size: 1.5rem;
 }
 
+p {
 
+  font-size: .8rem;
+}
+.cta-buttons{
+  gap: 0.625rem;
+}
+.spotify-btn{
+  font-size: 0.7rem;
 
-
+}
+.subscribe-btn-transparent {
+  font-size: 0.7rem;
+}
+}
