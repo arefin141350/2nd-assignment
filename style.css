@@ -3,34 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
 }
+
 /*bg-color*/
 .dark-purple {
   background-color: #1a0b2e;
 }
+
 /* navar */
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px; 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
   width: 100%;
-    flex-wrap: wrap;
-    
+  flex-wrap: wrap;
+
 }
-.logo{
-  font-size:2.5rem;
+
+.logo {
+  font-size: 2.5rem;
   font-weight: bold;
   cursor: pointer;
   color: white;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
- 
+
 }
+
 .logo:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
+
 .logo span {
   background: linear-gradient(to top, yellow, #ff00cc, #3333ff);
   background-clip: text;
@@ -45,72 +51,83 @@ body {
   cursor: pointer;
   justify-content: space-around;
   color: white;
-    
+
 }
-.nav-links li{
-    
-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
+.nav-links li {
+
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 }
+
 .nav-links li:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
-.subscribe-btn button  {
+
+.subscribe-btn button {
   background: linear-gradient(to right, #ffcc00, #ff00cc, #3333ff);
   color: white;
   border: none;
   padding: 20px 40px;
-  font-size:medium;
+  font-size: medium;
   font-weight: bold;
   border-radius: 40px;
-  cursor: pointer; 
+  cursor: pointer;
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 }
+
 .subscribe-btn :hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
+
 .btn-subscribe-main {
   display: inline-block;
 }
+
 .menu-icon {
   display: none;
   width: auto;
   height: auto;
   scale: calc(1.5);
 }
+
 /* hero */
-.hero{
+.hero {
   position: relative;
   margin-bottom: 0;
 
 }
 
-.hero .bg{
-    width: 100%;
-     display: block;
-     line-height: 0;
+.hero .bg {
+  width: 100%;
+  display: block;
+  line-height: 0;
 
 
 }
+
 .bg-img {
-  position: relative; 
- 
+  position: relative;
+
 }
+
 .circle {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);  
-  width:28%;
+  transform: translate(-50%, -50%);
+  width: 28%;
   aspect-ratio: 1;
 }
-.mic{
-   position: absolute;
+
+.mic {
+  position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);  
-  width:7%;
+  transform: translate(-50%, -50%);
+  width: 7%;
   height: auto;
 }
+
 .grn-btn {
   position: absolute;
   background-color: #00ff88;
@@ -123,9 +140,10 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   box-shadow: 0px 0px 15px #00ff88;
   z-index: 2;
 }
+
 /* text-container */
-.text-container{
-   background-color: #1a0b2e;
+.text-container {
+  background-color: #1a0b2e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,22 +153,24 @@ transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 
 
 }
-.all-text{
+
+.all-text {
   position: relative;
-  color: white; 
+  color: white;
   text-align: center;
-  margin-top: -200px;  
+  margin-top: -200px;
 
 
 }
+
 h1 {
   font-size: 3rem;
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 p {
   font-size: 1rem;
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .cta-buttons {
@@ -171,18 +191,18 @@ p {
   font-weight: bold;
   border-radius: 2.5rem;
   cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .subscribe-btn-transparent:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .spotify-btn {
   display: flex;
   align-items: center;
   gap: 5px;
-   width: auto;
+  width: auto;
   background: linear-gradient(to right, #ffcc00, #ff00cc, #3333ff);
   border: none;
   padding: 1rem 1.5rem;
@@ -190,43 +210,114 @@ p {
   border-radius: 2.5rem;
   cursor: pointer;
   color: white;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .spotify-btn:hover {
-  
-   transform: scale(1.2); 
+
+  transform: scale(1.2);
+}
+/*about*/
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  /* padding: 5px 2px; */
+  background-color: #1a0b2e;
+}
+br {
+  display: inline;
+}
+.About p {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 576px), screen and (max-width: 768px){
-  .logo{
-  font-size:1.5rem;
+.About h1,
+p {
+  color: white;
 }
-.navbar{
-  justify-content: space-between;
+
+.About p {
+ font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
 }
-   .btn-subscribe-main{
+
+.About .short {
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+}
+.horizontal-line{
+  background-color: #1a0b2e;
+  padding-bottom: 2rem;
+  
+}
+hr {
+ width: 80%;
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0px auto 0 auto;
+}
+/* rating-info */
+.info {
+  background-color: #1a0b2e;
+  display: flex;
+  color: #00ff88;
+  gap: 10rem;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 576px),
+screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .btn-subscribe-main {
     display: none;
   }
+
   .menu-icon {
     display: inline-block;
   }
+
   .nav-links {
     display: none;
   }
+
   .circle {
-  width:30%;
-}
+    width: 30%;
+  }
+
   .grn-btn {
     top: 15%;
     left: 55%;
     font-size: 0.5rem;
   }
-  .text-container{
-  width: 100%;
+
+  .text-container {
+    width: 100%;
 
   }
-   .all-text {
+
+  .all-text {
     transform: none;
     margin-top: -2.5rem;
     position: relative;
@@ -234,22 +325,59 @@ p {
     padding-bottom: 1.25rem;
   }
 
- h1 {
-  font-size: 1.5rem;
-}
+  h1 {
+    font-size: 1.5rem;
+  }
 
-p {
+  p {
 
-  font-size: .8rem;
-}
-.cta-buttons{
-  gap: 0.625rem;
-}
-.spotify-btn{
-  font-size: 0.7rem;
+    font-size: .8rem;
+  }
 
+  .cta-buttons {
+    gap: 0.625rem;
+  }
+
+  .spotify-btn {
+    font-size: 0.7rem;
+
+  }
+
+  .subscribe-btn-transparent {
+    font-size: 0.7rem;
+  }
+  .About {
+    margin-top: -1rem;
+    padding: 1.25rem;
 }
-.subscribe-btn-transparent {
-  font-size: 0.7rem;
+.About .short {
+  padding-bottom: 1rem;
+}
+br {
+  display: none;
+}
+.horizontal-line{
+  margin-top: -10px;
+}
+.info{
+ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: #00ff88;
+    gap: 5px;
+    margin-top: -10px;
+    padding-bottom: 2.7rem;
+}
+.info h1{
+  font-size: xx-large;
+}
+.info p{
+  font-size:1rem;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  padding: 0px 0.6rem;
 }
 }
