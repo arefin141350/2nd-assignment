@@ -690,7 +690,9 @@ screen and (max-width: 768px) {
 
 
 
-
+.footer-section{
+  margin-top: -.5rem;
+}
 
   .footer-content {
     position: absolute;
