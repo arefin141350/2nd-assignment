@@ -388,6 +388,7 @@ hr {
   gap: 1.5rem;
   padding: 0.5rem 0.5rem;
   text-align: left;
+  padding-bottom: 2rem;
 }
 
 .episode iframe {
@@ -418,7 +419,7 @@ hr {
 
 /* Host */
 .host {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .host h1 {
@@ -447,6 +448,73 @@ hr {
 .host-info p {
   color: #bcaecf;
   line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+}
+
+/* Footer */
+
+.footer .footer-bg {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.footer-content {
+  position: absolute;
+
+  left: 50%;
+
+
+  transform: translate(-50%, -160%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  font-size: larger;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+
+
+}
+
+.footer-links a {
+  color: #bcaecf;
+  text-decoration: none;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-links a:hover {
+  transform: scale(1.2);
+
+}
+
+.footer-links p {
+  color: #bcaecf;
 }
 
 @media screen and (max-width: 576px),
@@ -606,6 +674,10 @@ screen and (max-width: 768px) {
   }
 
   /* Host */
+  .host {
+    padding-bottom: 3rem;
+  }
+
   .host-info {
     display: flex;
     flex-direction: column;
@@ -614,5 +686,43 @@ screen and (max-width: 768px) {
 
   .host .text-info {
     text-align: center;
+  }
+
+
+
+
+
+  .footer-content {
+    position: absolute;
+
+    left: 50%;
+
+
+    transform: translate(-50%, -95%);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 8px;
+    padding: 0px;
+    background: transparent;
+    margin-top: -1rem;
+  }
+
+  .footer-content p {
+    font-size: .4rem;
+    margin-bottom: 0px;
+
+  }
+
+  .footer-links {
+
+    gap: 16px;
+  }
+
+  .link-item img {
+    width: 15px;
   }
 }
