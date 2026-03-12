@@ -117,7 +117,7 @@ body {
   transform: translate(-50%, -50%);
   width: 27%;
   aspect-ratio: 1;
- 
+
 }
 
 .mic {
@@ -392,9 +392,10 @@ hr {
   text-align: left;
   padding-bottom: 2rem;
 }
+
 .sub-episode {
-    padding-top: 24px;
-    padding-left: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
 }
 
 .episode iframe {
@@ -500,7 +501,8 @@ hr {
   font-size: larger;
   padding: 20px;
 }
-.footer-content .logo{
+
+.footer-content .logo {
   font-size: 100px;
 }
 
@@ -525,53 +527,72 @@ hr {
 .footer-links p {
   color: #bcaecf;
 }
+
 /* animation */
 @keyframes pulse-glow {
-    0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(0, 255, 136, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 255, 136, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+  }
 }
 
 .grn-btn {
-    animation: pulse-glow 1000ms infinite;
+  animation: pulse-glow 1000ms infinite;
 }
-.card,.host-info,.episode{
-    transition: transform 0.3s ease, background 0.3s ease;
+
+.card,
+.host-info,
+.episode {
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    background-color: rgba(53, 17, 101, 0.6);
-    border: 1px solid rgb(121, 42, 224) ;
+  transform: translateY(-5px);
+  background-color: rgba(53, 17, 101, 0.6);
+  border: 1px solid rgb(121, 42, 224);
 }
-.host-info:hover{
-    transform: translateY(-5px);
-    background-color: rgba(53, 17, 101, 0.6);
-    border: 1px solid rgb(121, 42, 224) ;
+
+.host-info:hover {
+  transform: translateY(-5px);
+  background-color: rgba(53, 17, 101, 0.6);
+  border: 1px solid rgb(121, 42, 224);
 }
-.episode:hover{
-    transform: translateY(-5px);
-    background-color: rgba(53, 17, 101, 0.6);
-    border: 1px solid rgb(121, 42, 224) ;
+
+.episode:hover {
+  transform: translateY(-5px);
+  background-color: rgba(53, 17, 101, 0.6);
+  border: 1px solid rgb(121, 42, 224);
 }
-.circle,.mic{
- animation-name: floating;
+
+.circle,
+.mic {
+  animation-name: floating;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 
 }
+
 @keyframes floating {
-    0% {
-        margin-top: 0px;
-    }
-    50% {
-        margin-top: -15px; 
-    }
-    100% {
-        margin-top: 0px;
-    }
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: -15px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
 }
 
 
@@ -611,18 +632,7 @@ screen and (max-width: 768px) {
     left: 55%;
     font-size: 0.5rem;
   }
-  .spotify-btn{
-        padding: .75rem 1rem;
-  }
-.spotify-btn:hover{
-  transform: scale(1.08);
-}
-  .subscribe-btn-transparent{
-            padding: .75rem 1.75rem;
-  }
-.subscribe-btn-transparent:hover{
-   transform: scale(1.08);
-}
+
   /* text-container */
   .text-container {
     width: 100%;
@@ -658,6 +668,23 @@ screen and (max-width: 768px) {
   .subscribe-btn-transparent {
     font-size: 0.7rem;
   }
+
+  .spotify-btn {
+    padding: .75rem 1rem;
+  }
+
+  .spotify-btn:hover {
+    transform: scale(1.08);
+  }
+
+  .subscribe-btn-transparent {
+    padding: .75rem 1.75rem;
+  }
+
+  .subscribe-btn-transparent:hover {
+    transform: scale(1.08);
+  }
+
 
   .About {
     margin-top: -1rem;
@@ -761,9 +788,9 @@ screen and (max-width: 768px) {
 
 
 
-.footer-section{
-  margin-top: -.5rem;
-}
+  .footer-section {
+    margin-top: -.5rem;
+  }
 
   .footer-content {
     position: absolute;
@@ -783,9 +810,11 @@ screen and (max-width: 768px) {
     background: transparent;
     margin-top: -1rem;
   }
-.footer-content .logo{
-  font-size: 1.5rem;
-}
+
+  .footer-content .logo {
+    font-size: 1.5rem;
+  }
+
   .footer-content p {
     font-size: .4rem;
     margin-bottom: 0px;
@@ -800,15 +829,18 @@ screen and (max-width: 768px) {
   .link-item img {
     width: 15px;
   }
+
   @keyframes floating {
     0% {
-        margin-top: 0px;
+      margin-top: 0px;
     }
+
     50% {
-        margin-top: -5px; 
+      margin-top: -5px;
     }
+
     100% {
-        margin-top: 0px;
+      margin-top: 0px;
     }
-}
+  }
 }
