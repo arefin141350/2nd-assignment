@@ -188,7 +188,7 @@ p {
   gap: 5px;
   color: #00ff88;
   border: 1px solid #00ff88;
-  padding: 12px 40px;
+  padding: .75rem 2.5rem;
   font-weight: bold;
   border-radius: 2.5rem;
   cursor: pointer;
@@ -611,7 +611,18 @@ screen and (max-width: 768px) {
     left: 55%;
     font-size: 0.5rem;
   }
-
+  .spotify-btn{
+        padding: .75rem 1rem;
+  }
+.spotify-btn:hover{
+  transform: scale(1.08);
+}
+  .subscribe-btn-transparent{
+            padding: .75rem 1.75rem;
+  }
+.subscribe-btn-transparent:hover{
+   transform: scale(1.08);
+}
   /* text-container */
   .text-container {
     width: 100%;
